@@ -28,3 +28,10 @@ img {
   width: 100%;
   display: block;
 }
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: block;
+}
