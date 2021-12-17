@@ -1,0 +1,32 @@
+.skills {
+  background: var(--clr-grey-10);
+}
+
+.skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);
+
+  &__icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    transition: var(--transition);
+    display: inline-block;
+    color: var(--clr-primary);
+  }
+
+  &__text {
+    color: var(--clr-grey-5);
+    max-width: 17rem;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background: var(--clr-white);
+    box-shadow: 0 2px var(--clr-primary);
+  }
+
+  &:hover &__icon {
+    transform: translateY(-5px);
+  }
+}
