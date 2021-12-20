@@ -5,6 +5,14 @@ body {
   font-size: 0.875rem;
 }
 
+.section-title {
+  margin-bottom: 2rem;
+  h3 {
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary);
+  }
+}
+
 h1,
 h2,
 h3,
