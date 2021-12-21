@@ -71,23 +71,50 @@
 }
 
 
-@media screen and (min-width: 768px) {
-  .services__card {
-    float: left;
-    width: 47.5%;
+// @media screen and (min-width: 768px) {
+//   .services__card {
+//     float: left;
+//     width: 47.5%;
     
-    &:first-child {
-      margin-right: 5%;
+//     &:first-child {
+//       margin-right: 5%;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 992px) {
+//   .services__card {
+//     width: 30%;
+    
+//     &:not(:last-child) {
+//       margin-right: 5%;
+//     }
+//   }
+// }
+
+
+
+@media screen and (min-width: 768px) {
+  .services {
+    &__center {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      column-gap: 1.5rem;
+      align-items: start;
     }
-  }
+
+    &__card {
+      flex: 0 0 calc((100% - 1.5rem) / 2);
+    }
+  }  
 }
 
 @media screen and (min-width: 992px) {
-  .services__card {
-    width: 30%;
-    
-    &:not(:last-child) {
-      margin-right: 5%;
+  .services {
+    &__card {
+      flex: 0 0 calc((100% - 3rem) / 3);
     }
-  }
+  }  
 }
+

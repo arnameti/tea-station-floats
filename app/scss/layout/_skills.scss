@@ -31,23 +31,35 @@
   }
 }
 
-// .skills {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex: 0 1 25%;
-
+// @media screen and (min-width: 576px) {
+//   .skill {
+//     float: left;
+//     width: 50%;
+//   }
 // }
 
+// @media screen and (min-width: 1200px) {
+//   .skill {
+//     width: 25%;
+//   }
+// }
 
-@media screen and (min-width: 576px) {
-  .skill {
-    float: left;
-    width: 50%;
+@media screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+
+    .skill {
+      flex: 0 0 calc((100% - 1.5rem) / 2);
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .skill {
-    width: 25%;
+  .skills {
+    .skill {
+      flex: 0 0 calc((100% - 4.5rem) / 4);
+    }
   }
 }
